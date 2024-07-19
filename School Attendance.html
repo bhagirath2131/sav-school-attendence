@@ -1,0 +1,205 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+    
+  <meta charset="UTF-8">
+
+    
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>School Attendance</title>
+
+    
+    
+  <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #f06, #48f);
+            color: white;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: auto;
+        }
+        .container {
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+            text-align: center;
+            width: 90%;
+            max-width: 600px;
+            margin: 20px 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid white;
+        }
+        th {
+            background-color: #333;
+        }
+        td {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+        .attendance-button {
+            background-color: #48f;
+            border: none;
+            padding: 10px 20px;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        .attendance-button:hover {
+            background-color: #36d;
+        }
+
+        /* Media Query for Mobile Devices */
+        @media (max-width: 600px) {
+            body {
+                height: auto;
+                padding: 20px 0;
+            }
+            .container {
+                padding: 15px;
+            }
+            th, td {
+                padding: 8px;
+            }
+            .attendance-button {
+                padding: 8px 16px;
+            }
+        }
+    </style>
+</head><body>
+    
+<div class="container">
+        <h1>SAV School Attendance STD 12<br>
+</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Student Name</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody id="attendance-table">
+                <tr>
+                    <td>PARMAR YUVRAJ<br>
+</td>
+                    <td><button class="attendance-button" onclick="toggleAttendance(this)">Present</button></td>
+                </tr>
+                <tr>
+                    <td>RATHOD BHAGIRATH</td>
+                    <td><button class="attendance-button" onclick="toggleAttendance(this)">Present</button></td>
+                </tr>
+                <tr>
+                    <td>KAHAR UMANG<br>
+</td>
+                    <td><button class="attendance-button" onclick="toggleAttendance(this)">Present</button></td>
+                </tr>
+                <tr>
+                    <td>SHAH SHIDD<br>
+</td>
+                    <td><button class="attendance-button" onclick="toggleAttendance(this)">Present</button></td>
+                </tr>
+                <tr>
+                    <td>SHAH VANSH<br>
+</td>
+                    <td><button class="attendance-button" onclick="toggleAttendance(this)">Present</button></td>
+                </tr>
+                <tr>
+                    <td>MISTRI TIRTH<br>
+</td>
+                    <td><button class="attendance-button" onclick="toggleAttendance(this)">Present</button></td>
+                </tr>
+                <tr>
+                    <td>PARMAR SURPAL</td>
+                    <td><button class="attendance-button" onclick="toggleAttendance(this)">Present</button></td>
+                </tr>
+                <tr>
+                    <td>MORE ADITYA<br>
+</td>
+                    <td><button class="attendance-button" onclick="toggleAttendance(this)">Present</button></td>
+                </tr>
+                <tr>
+                    <td>&nbsp;RAVAL JAY</td>
+                    <td><button class="attendance-button" onclick="toggleAttendance(this)">Present</button></td>
+                </tr>
+                <tr>
+                    <td>THAKOR SIDDHARTH<br>
+</td>
+                    <td><button class="attendance-button" onclick="toggleAttendance(this)">Present</button></td>
+                </tr>
+                <tr>
+                    <td>KRISH<br>
+</td>
+                    <td><button class="attendance-button" onclick="toggleAttendance(this)">Present</button></td>
+                </tr>
+                <tr>
+                    <td>THAKOR YOGESH<br>
+</td>
+                    <td><button class="attendance-button" onclick="toggleAttendance(this)">Present</button></td>
+                </tr>
+                <tr>
+                    <td>PATEL YASH<br>
+</td>
+                    <td><button class="attendance-button" onclick="toggleAttendance(this)">Present</button></td>
+                </tr>
+                <tr>
+                    <td>BHARWAD HARDIK<br>
+</td>
+                    <td><button class="attendance-button" onclick="toggleAttendance(this)">Present</button></td>
+                </tr>
+                <tr>
+                    <td>RATHOD JANIK<br>
+</td>
+                    <td><button class="attendance-button" onclick="toggleAttendance(this)">Present</button></td>
+                </tr>
+                <tr>
+                    <td>WAGELA RONAK<br>
+</td>
+                    <td><button class="attendance-button" onclick="toggleAttendance(this)">Present</button></td>
+                </tr>
+                <tr>
+                    <td><small>PATEL UTSAV</small></td>
+                    <td><button class="attendance-button" onclick="toggleAttendance(this)">Present</button></td>
+                </tr>
+                <tr>
+                    <td>AKASH<br>
+</td>
+                    <td><button class="attendance-button" onclick="toggleAttendance(this)">Present</button></td>
+                </tr>
+                <tr>
+                    <td>KRISH<br>
+</td>
+                    <td><button class="attendance-button" onclick="toggleAttendance(this)">Present</button></td>
+                </tr>
+                <tr>
+                    <td>MATHAVADIYA PARTH<br>
+</td>
+                    <td><button class="attendance-button" onclick="toggleAttendance(this)">Present</button></td>
+                </tr>
+            </tbody>
+        </table><a href="Thank%20You%21.html"><big><big><big><big><big><button name="submit"></button><small>SUBMIT</small></big></big></big></big></big></a>
+    </div>
+
+
+    
+<script>
+        function toggleAttendance(button) {
+            if (button.textContent === 'Present') {
+                button.textContent = 'Absent';
+                button.style.backgroundColor = '#f06';
+            } else {
+                button.textContent = 'Present';
+                button.style.backgroundColor = '#48f';
+            }
+        }
+    </script>
+</body></html>
